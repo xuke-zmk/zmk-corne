@@ -166,5 +166,14 @@
                                                             &trans  &trans           &trans          &trans        &trans        &trans
             >;
         };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans      &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &caps_word   &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans      &trans  &lt 4 D    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans      &trans   &trans    &trans  &trans  &trans
+            >;
+        };
     };
 };
