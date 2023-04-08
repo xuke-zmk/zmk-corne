@@ -166,41 +166,5 @@
                                                             &trans  &trans           &trans          &trans        &trans        &trans
             >;
         };
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &mt C 0    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans   &trans    &trans  &trans  &trans
-            >;
-        };
-
-        layer_5 {
-            bindings = <
-&trans  &trans      &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &caps_word  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans      &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                            &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-&trans   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &lt 2 0  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        layer_7 {
-            bindings = <
-&trans       &trans  &trans      &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &lt 5 0  &trans      &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &bootloader  &trans  &caps_word  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                 &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
     };
 };
