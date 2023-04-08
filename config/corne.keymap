@@ -97,6 +97,18 @@
         };
     };
 
+    behaviors {
+        lt1: lt1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LT1";
+            #binding-cells = <0>;
+            bindings =
+                <&lt 1 C>,
+                <>,
+                <>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -109,10 +121,10 @@
 
             label = "DEFAULT";
             bindings = <
-              &kp ESC   &kp Q   &kp W     &kp E        &kp R     &kp T            &kp Y            &kp U          &kp I    &kp O     &kp P       &kp BSPC
- &mt LEFT_CONTROL TAB   &kp A   &kp S     &kp D        &kp F     &kp G            &kp H            &kp J          &kp K    &kp L  &kp SEMI        &kp SQT
-       &kp LEFT_SHIFT   &kp Z   &kp X     &kp C        &kp V     &kp B            &kp N            &kp M      &kp COMMA  &kp DOT  &kp FSLH  &mt RSHFT RET
-                                       &kp LGUI  &lt 2 SPACE  &kp LALT          &kp RET  &lt 1 BACKSPACE  &kp RIGHT_ALT
+             &kp ESC  &kp Q  &kp W     &kp E        &kp R     &kp T      &kp Y            &kp U          &kp I    &kp O     &kp P       &kp BSPC
+&mt LEFT_CONTROL TAB  &kp A  &kp S     &kp D        &kp F     &kp G      &kp H            &kp J          &kp K    &kp L  &kp SEMI        &kp SQT
+      &kp LEFT_SHIFT  &kp Z  &kp X     &kp C        &kp V     &kp B      &kp N            &kp M      &kp COMMA  &kp DOT  &kp FSLH  &mt RSHFT RET
+                                    &kp LGUI  &lt 2 SPACE  &kp LALT    &kp RET  &lt 1 BACKSPACE  &kp RIGHT_ALT
             >;
         };
 
@@ -125,10 +137,10 @@
 
             label = "SYMBOL";
             bindings = <
- &kp GRAVE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT          &kp CARET   &kp AMPS          &kp STAR           &kp LPAR       &kp RPAR  &kp DEL
-    &trans     &none   &none     &none     &none  &kp GRAVE          &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET       &kp PIPE    &none
-    &trans     &none   &none     &none     &none  &kp TILDE          &kp UNDER   &kp PLUS    &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp BACKSLASH    &none
-                                &trans     &mo 3     &trans             &trans     &trans            &trans
+&kp GRAVE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET   &kp AMPS          &kp STAR           &kp LPAR       &kp RPAR  &kp DEL
+   &trans     &none   &none     &none     &none  &kp GRAVE    &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET       &kp PIPE    &none
+   &trans     &none   &none     &none     &none  &kp TILDE    &kp UNDER   &kp PLUS    &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp BACKSLASH    &none
+                               &trans     &mo 3     &trans       &trans     &trans            &trans
             >;
         };
 
@@ -141,10 +153,10 @@
 
             label = "NUMBER";
             bindings = <
-   &trans  &kp N1  &kp N2  &kp N3  &kp N4   &kp N5            &kp N6    &kp N7     &kp N8     &kp N9  &kp N0  &kp DEL
- &kp CAPS  &kp F1  &kp F2  &kp F3  &kp F4   &kp F5          &kp LEFT  &kp DOWN     &kp UP  &kp RIGHT   &none  &kp F11
-   &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10          &kp HOME   &kp END  &kp PG_UP  &kp PG_DN   &none  &kp F12
-                           &trans  &trans   &trans            &trans     &mo 3     &trans
+  &trans  &kp N1  &kp N2  &kp N3  &kp N4   &kp N5      &kp N6    &kp N7     &kp N8     &kp N9  &kp N0  &kp DEL
+&kp CAPS  &kp F1  &kp F2  &kp F3  &kp F4   &kp F5    &kp LEFT  &kp DOWN     &kp UP  &kp RIGHT   &none  &kp F11
+  &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10    &kp HOME   &kp END  &kp PG_UP  &kp PG_DN   &none  &kp F12
+                          &trans  &trans   &trans      &trans     &mo 3     &trans
             >;
         };
 
@@ -157,20 +169,56 @@
 
             label = "SETTING";
             bindings = <
- &rgb_ug RGB_BRI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_EFF   &none  &rgb_ug RGB_TOG          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_CLR
- &rgb_ug RGB_BRD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_EFR   &none            &none                 &none         &none         &none         &none  &out OUT_BLE  &out OUT_USB
-           &none            &none            &none            &none   &none            &none                &reset   &bootloader         &none         &none         &none  &out OUT_TOG
-                                                             &trans  &trans           &trans                &trans        &trans        &trans
+&rgb_ug RGB_BRI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_EFF   &none  &rgb_ug RGB_TOG    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_CLR
+&rgb_ug RGB_BRD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_EFR   &none            &none           &none         &none         &none         &none  &out OUT_BLE  &out OUT_USB
+          &none            &none            &none            &none   &none            &none          &reset   &bootloader         &none         &none         &none  &out OUT_TOG
+                                                            &trans  &trans           &trans          &trans        &trans        &trans
             >;
         };
 
-       HOTKEY {
-           bindings = <
-&trans  &email  &gmail  &phone  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans          &trans  &trans  &trans
-           >;
-       };
+        HOTKEY {
+            bindings = <
+&trans  &email  &gmail  &phone  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_8 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
     };
 };
