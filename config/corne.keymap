@@ -195,14 +195,5 @@
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
-
-        layer_7 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans       &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans       &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &key_repeat    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans       &trans    &trans  &trans  &trans
-            >;
-        };
     };
 };
