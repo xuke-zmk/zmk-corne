@@ -133,9 +133,9 @@
 
             label = "DEFAULT";
             bindings = <
-     &kp ESC  &kp Q  &kp W    &kp E  &kp R      &kp T          &kp Y      &kp U      &kp I    &kp O          &kp P     &kp BACKSPACE
-&kp CAPSLOCK  &kp A  &kp S    &kp D  &kp F      &kp G          &kp H      &kp J      &kp K    &kp L  &kp SEMICOLON  &kp SINGLE_QUOTE
-   &kp LCTRL  &kp Z  &kp X    &kp C  &kp V      &kp B          &kp N      &kp M  &kp COMMA  &kp DOT      &kp SLASH        &kp RSHIFT
+     &kp ESC  &kp Q  &kp W    &kp E  &kp R      &kp T          &kp Y      &kp U      &kp I    &kp O          &kp P  &kp BACKSPACE
+&kp CAPSLOCK  &kp A  &kp S    &kp D  &kp F      &kp G          &kp H      &kp J      &kp K    &kp L  &kp SEMICOLON      &kp ENTER
+   &kp LCTRL  &kp Z  &kp X    &kp C  &kp V      &kp B          &kp N      &kp M  &kp COMMA  &kp DOT      &kp SLASH     &kp RSHIFT
                             &lt2mo1  &mo 6  &spacedel    &lt 5 SPACE  &kp SPACE      &mo 2
             >;
         };
