@@ -100,7 +100,7 @@
             label = "LT2MO1";
             #binding-cells = <0>;
             bindings =
-                <&lt 2 undefined>,
+                <&lt 2 D>,
                 <&mo 1>;
         };
         spacedel: spacedel {
