@@ -100,11 +100,11 @@
             label = "LT2MO1";
             #binding-cells = <0>;
             bindings =
-<<<<<<< HEAD
+                <<<<<<< HEAD,
                 <&lt 2 A>,
-=======
+                =======,
                 <&lt 2 D>,
->>>>>>> 557522dd0a737c70e577494e57569f4d77aad415
+                >>>>>>> 557522dd0a737c70e577494e57569f4d77aad415,
                 <&mo 1>;
         };
         spacedel: spacedel {
@@ -137,10 +137,10 @@
 
             label = "DEFAULT";
             bindings = <
-     &kp ESC  &kp Q  &kp W  &kp E  &kp R  &kp T          &kp Y      &kp U      &kp I    &kp O          &kp P  &kp BACKSPACE
-&kp CAPSLOCK  &kp A  &kp S  &kp D  &kp F  &kp G          &kp H      &kp J      &kp K    &kp L  &kp SEMICOLON      &kp ENTER
-   &kp LCTRL  &kp Z  &kp X  &kp C  &kp V  &kp B          &kp N      &kp M  &kp COMMA  &kp DOT      &kp SLASH     &kp RSHIFT
-                            &kp C  &mo 6  &kp C    &lt 5 SPACE  &kp SPACE      &mo 2
+     &kp ESC  &kp Q  &kp W    &kp E          &kp R      &kp T          &kp Y      &kp U      &kp I    &kp O          &kp P  &kp BACKSPACE
+&kp CAPSLOCK  &kp A  &kp S    &kp D          &kp F      &kp G          &kp H      &kp J      &kp K    &kp L  &kp SEMICOLON      &kp ENTER
+   &kp LCTRL  &kp Z  &kp X    &kp C          &kp V      &kp B          &kp N      &kp M  &kp COMMA  &kp DOT      &kp SLASH     &kp RSHIFT
+                            &lt2mo1  &laltguidtog1  &spacedel    &lt 5 SPACE  &kp SPACE      &mo 2
             >;
         };
 
