@@ -149,10 +149,10 @@
 
             label = "SYMBOL";
             bindings = <
-  &kp ESC     &kp DEL  &kp Q    &kp W  &kp E   &kp T    &kp CARET   &kp AMPS          &kp STAR           &kp LPAR       &kp RPAR  &kp DEL
-  &kp TAB       &kp H  &kp A    &kp S  &kp D   &kp U    &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET       &kp PIPE    &none
-&kp LCTRL  &kp LSHIFT  &kp Z    &kp C  &kp V   &kp B    &kp UNDER   &kp PLUS    &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp BACKSLASH    &none
-                              &lt2mo1  &mo 6  &trans       &trans     &trans            &trans
+  &kp ESC     &kp DEL  &kp Q    &kp W  &kp E  &kp T    &kp CARET   &kp AMPS          &kp STAR           &kp LPAR       &kp RPAR  &kp DEL
+  &kp TAB       &kp H  &kp A    &kp S  &kp D  &kp U    &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET       &kp PIPE    &none
+&kp LCTRL  &kp LSHIFT  &kp Z    &kp C  &kp V  &kp B    &kp UNDER   &kp PLUS    &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp BACKSLASH    &none
+                              &lt2mo1  &mo 6  &mo 7       &trans     &trans            &trans
             >;
         };
 
@@ -194,7 +194,7 @@
 
         layer_6 {
             bindings = <
-     &kp ESC     &kp ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS    &trans  &trans  &trans  &trans  &trans  &trans
+  &kp DELETE     &kp ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS    &trans  &trans  &trans  &trans  &trans  &trans
    &kp ENTER        &kp SLASH  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6   &kp PLUS    &trans  &trans  &trans  &trans  &trans  &trans
 &kp KP_EQUAL  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3    &kp DOT    &trans  &trans  &trans  &trans  &trans  &trans
                                                          &trans        &kp LG(S)     &trans    &trans  &trans  &trans
