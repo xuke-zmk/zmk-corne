@@ -149,10 +149,10 @@
 
             label = "SYMBOL";
             bindings = <
-  &kp ESC     &kp DEL  &kp Q   &kp W  &kp E   &kp T    &kp CARET   &kp AMPS          &kp STAR           &kp LPAR       &kp RPAR  &kp DEL
-  &kp TAB       &kp H  &kp A   &kp S  &kp D   &kp U    &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET       &kp PIPE    &none
-&kp LCTRL  &kp LSHIFT  &kp Z   &kp C  &kp V   &kp B    &kp UNDER   &kp PLUS    &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp BACKSLASH    &none
-                              &trans  &mo 3  &trans       &trans     &trans            &trans
+  &kp ESC     &kp DEL  &kp Q    &kp W  &kp E   &kp T    &kp CARET   &kp AMPS          &kp STAR           &kp LPAR       &kp RPAR  &kp DEL
+  &kp TAB       &kp H  &kp A    &kp S  &kp D   &kp U    &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET       &kp PIPE    &none
+&kp LCTRL  &kp LSHIFT  &kp Z    &kp C  &kp V   &kp B    &kp UNDER   &kp PLUS    &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp BACKSLASH    &none
+                              &lt2mo1  &mo 6  &trans       &trans     &trans            &trans
             >;
         };
 
