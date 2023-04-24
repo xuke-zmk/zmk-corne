@@ -203,10 +203,10 @@
 
         layer_7 {
             bindings = <
-&kp DELETE  &trans         &kp LC(P)         &kp LC(S)         &kp LC(H)  &kp LC(J)    &trans  &trans  &trans  &trans  &trans  &trans
-     &kp H  &trans             &kp P         &kp LC(M)             &kp K  &kp LC(G)    &trans  &trans  &trans  &trans  &trans  &trans
-  &kp HOME  &trans  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(B)    &trans  &trans  &trans  &trans  &trans  &trans
-                                                &trans            &trans     &trans    &trans  &trans  &trans
+&kp BACKSPACE  &trans         &kp LC(P)         &kp LC(S)         &kp LC(H)  &kp LC(J)    &trans  &trans  &trans  &trans  &trans  &trans
+        &kp H  &trans             &kp P         &kp LC(M)             &kp K  &kp LC(G)    &trans  &trans  &trans  &trans  &trans  &trans
+     &kp HOME  &trans  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(B)    &trans  &trans  &trans  &trans  &trans  &trans
+                                                   &trans            &trans     &trans    &trans  &trans  &trans
             >;
         };
     };
