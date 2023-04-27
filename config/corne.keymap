@@ -126,13 +126,12 @@
 
             tapping-term-ms = <180>;
         };
-        xuke: xuke {
-            compatible = "zmk,behavior-hold-tap";
-            label = "XUKE";
-            bindings = <&mo>;
-            #binding-cells = <2>;
+        mo6: mo6 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MO6";
+            #binding-cells = <0>;
+            bindings = <&mo 6>;
             tapping-term-ms = <50>;
-            global-quick-tap;
         };
     };
 
@@ -148,10 +147,10 @@
 
             label = "DEFAULT";
             bindings = <
-     &kp ESC  &kp Q  &kp W    &kp E    &kp R      &kp T          &kp Y      &kp U      &kp I    &kp O          &kp P  &kp BACKSPACE
-&kp CAPSLOCK  &kp A  &kp S    &kp D    &kp F      &kp G          &kp H      &kp J      &kp K    &kp L  &kp SEMICOLON      &kp ENTER
-   &kp LCTRL  &kp Z  &kp X    &kp C    &kp V      &kp B          &kp N      &kp M  &kp COMMA  &kp DOT      &kp SLASH     &kp RSHIFT
-                            &lt2mo1  &xuke 6  &spacedel    &lt 5 SPACE  &kp SPACE      &mo 2
+     &kp ESC  &kp Q  &kp W    &kp E  &kp R      &kp T          &kp Y      &kp U      &kp I    &kp O          &kp P  &kp BACKSPACE
+&kp CAPSLOCK  &kp A  &kp S    &kp D  &kp F      &kp G          &kp H      &kp J      &kp K    &kp L  &kp SEMICOLON      &kp ENTER
+   &kp LCTRL  &kp Z  &kp X    &kp C  &kp V      &kp B          &kp N      &kp M  &kp COMMA  &kp DOT      &kp SLASH     &kp RSHIFT
+                            &lt2mo1   &mo6  &spacedel    &lt 5 SPACE  &kp SPACE      &mo 2
             >;
         };
 
