@@ -5,8 +5,8 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
 
 #define DEFAULT 0
 #define SYMBOL  1
@@ -163,7 +163,7 @@
 
             label = "SYMBOL";
             bindings = <
-  &kp ESC     &kp DEL  &kp Q    &kp W  &kp E  &kp T    &bt BT_NXT  &bt BT_SEL 0      &trans  &trans  &trans  &trans
+  &kp ESC     &kp DEL  &kp Q    &kp W  &kp E  &kp T    &bt BT_NXT  &bt BT_SEL 0      &trans  &trans  &trans   &kp A
   &kp TAB       &kp H  &kp A    &kp S  &kp D  &kp U    &bt BT_PRV  &bt BT_SEL 1      &trans  &trans  &trans  &trans
 &kp LCTRL  &kp LSHIFT  &kp Z    &kp C  &kp V  &kp B        &trans  &bt BT_SEL 2      &trans  &trans  &trans  &trans
                               &lt2mo1  &mo 6  &mo 7        &trans        &trans  &bt BT_CLR
